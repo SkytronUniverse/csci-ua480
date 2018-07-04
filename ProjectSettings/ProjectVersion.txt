@@ -1,1 +1,15 @@
+<<<<<<< Updated upstream
 m_EditorVersion: 2018.1.1f1
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+m_EditorVersion: 2018.1.1f1
+=======
+
+m_EditorVersion: 2018.1.1f1
+
+>>>>>>> 8de0d9540f6611d3b3c89516fe70ff885bc439d4
+=======
+m_EditorVersion: 2018.1.1f1
+>>>>>>> 794fc91423c70dc57f88d8eed32e825064988570
+>>>>>>> Stashed changes
