@@ -26,9 +26,10 @@ namespace kmb_assignment04
             GenerateMap();
         }
 
+        //function to create level map
         void GenerateMap()
         {
-            //deminension of the tile prefab used for level generation
+            //dimension of the tile prefab used for level generation
             Vector3 tileSize = groundPrefab.GetComponent<MeshRenderer>().bounds.size;
             int tileWidth = (int)tileSize.x;
             int tileDepth = (int)tileSize.z;
@@ -37,8 +38,9 @@ namespace kmb_assignment04
             {
                 for(int zIndex = 0; zIndex < mapDepth; zIndex++)
                 {
+                    //Get position of next tile
                     Vector3 tPosition = new Vector3(this.gameObject.transform.position.x + xIndex * tileWidth, this.gameObject.transform.position.y, this.gameObject.transform.position.z + zIndex*tileDepth);
-                    GameObject tile = Instantiate(groundPrefab, tPosition, Quaternion.identity);
+                    GameObject tile = Instantiate(groundPrefab, tPosition, Quaternion.identity); //Instantiate new ground right next to previous
                 }
             }
         }
